@@ -1,0 +1,63 @@
+<!-- 喃娘 -->
+<!-- 
+                                                                                                       
+         ,--.                        ,--.         ,--.                                ,--.             
+       ,--.'|   ,---,              ,--.'|       ,--.'|   ,---,   ,---,              ,--.'|  ,----..    
+   ,--,:  : |  '  .' \         ,--,:  : |   ,--,:  : |,`--.' |  '  .' \         ,--,:  : | /   /   \   
+,`--.'`|  ' : /  ;    '.    ,`--.'`|  ' :,`--.'`|  ' :|   :  : /  ;    '.    ,`--.'`|  ' :|   :     :  
+|   :  :  | |:  :       \   |   :  :  | ||   :  :  | |:   |  ':  :       \   |   :  :  | |.   |  ;. /  
+:   |   \ | ::  |   /\   \  :   |   \ | ::   |   \ | :|   :  |:  |   /\   \  :   |   \ | :.   ; /--`   
+|   : '  '; ||  :  ' ;.   : |   : '  '; ||   : '  '; |'   '  ;|  :  ' ;.   : |   : '  '; |;   | ;  __  
+'   ' ;.    ;|  |  ;/  \   \'   ' ;.    ;'   ' ;.    ;|   |  ||  |  ;/  \   \'   ' ;.    ;|   : |.' .' 
+|   | | \   |'  :  | \  \ ,'|   | | \   ||   | | \   |'   :  ;'  :  | \  \ ,'|   | | \   |.   | '_.' : 
+'   : |  ; .'|  |  '  '--'  '   : |  ; .''   : |  ; .'|   |  '|  |  '  '--'  '   : |  ; .''   ; : \  | 
+|   | '`--'  |  :  :        |   | '`--'  |   | '`--'  '   :  ||  :  :        |   | '`--'  '   | '/  .' 
+'   : |      |  | ,'        '   : |      '   : |      ;   |.' |  | ,'        '   : |      |   :    /   
+;   |.'      `--''          ;   |.'      ;   |.'      '---'   `--''          ;   |.'       \   \ .'    
+'---'                       '---'        '---'                               '---'          `---`      
+                                                                                                       
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oiiaioooooiai</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    video {
+      width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <video id="videoPlayer" src="https://alimov2.a.kwimgs.com/upic/2023/05/19/13/BMjAyMzA1MTkxMzM2MzZfMTQ3MDg3MDc1MV8xMDM0MTQzMjk2NDlfMl8z_b_B0bff8fdfb89a5babe3e811d7538e48a1.mp4" preload="auto" autoplay ></video>
+
+  <script>
+    const video = document.getElementById('videoPlayer');
+    
+    // 禁用右键菜单
+    video.oncontextmenu = function (e) {
+      e.preventDefault();
+    };
+
+    // 监听视频点击事件，控制播放/暂停
+    video.addEventListener('click', function() {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  </script>
+</body>
+</html>
